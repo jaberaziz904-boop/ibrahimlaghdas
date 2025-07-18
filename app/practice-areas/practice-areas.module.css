@@ -1,0 +1,35 @@
+.practiceAreasGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.practiceCard {
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.practiceCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.practiceCard i {
+    font-size: 3rem;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.practiceCard:hover i {
+    transform: scale(1.1);
+}
+
+.practiceCard h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
