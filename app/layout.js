@@ -1,16 +1,23 @@
+'use client'
 import './globals.css'
 import Link from 'next/link'
-
-export const metadata = {
-  title: 'مكتب الأستاذ إبراهيم لغداس',
-  description: 'استشارة، دفاع ومواكبة قانونية موثوقة تجمع بين الأصالة والخبرة الحديثة.',
-}
+import { useEffect, useState } from 'react'
 
 export default function RootLayout({ children }) {
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10)
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   return (
     <html lang="ar">
       <body>
-        <header className="header">
+        <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
           <nav className="nav container">
             <Link href="/">
               <img src="/images/logo-main.svg" alt="Laghdas Avocat Logo" width={150} height={50} />

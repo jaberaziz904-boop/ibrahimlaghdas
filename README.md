@@ -22,6 +22,12 @@ This is a simple, clean, and easy-to-deploy website for a law firm, built with N
     ```
 5.  **View the website**: Open your web browser and go to `http://localhost:3000`.
 
+## Image Dimensions
+
+*   `logo-main.svg`: 150x50 pixels (or any other size with the same aspect ratio)
+*   `hero-background.jpg`: 1920x1080 pixels
+*   `ibrahim-laghdas-portrait.jpg`: 400x500 pixels
+
 ## How to Deploy to GitHub Pages
 
 1.  **Build the static files**:
