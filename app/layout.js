@@ -1,6 +1,5 @@
 import './globals.css'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
+import Link from 'next/link'
 
 export const metadata = {
   title: 'مكتب الأستاذ إبراهيم لغداس',
@@ -10,10 +9,24 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ar">
-      <body className="bg-white font-sans">
-        <Navbar />
+      <body>
+        <header className="header">
+          <nav className="nav container">
+            <Link href="/">
+              <img src="/images/logo-main.svg" alt="Laghdas Avocat Logo" width={150} height={50} />
+            </Link>
+            <div>
+              <Link href="/">الرئيسية</Link>
+              <Link href="/about">عن المكتب</Link>
+              <Link href="/practice-areas">مجالات الخبرة</Link>
+              <Link href="/contact">اتصل بنا</Link>
+            </div>
+          </nav>
+        </header>
         <main>{children}</main>
-        <Footer />
+        <footer className="footer">
+          <p>© {new Date().getFullYear()} مكتب الأستاذ إبراهيم لغداس. جميع الحقوق محفوظة.</p>
+        </footer>
       </body>
     </html>
   )
