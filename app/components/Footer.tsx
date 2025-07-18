@@ -22,7 +22,7 @@ export default function Footer() {
         </div>
         <div className={styles.footerCol}>
           <h4>معلومات الاتصال</h4>
-          <p>العنوان: شارع محمد الخامس، سطات، المغرب</p>
+          <p>العنوان: 4eme étage, Résidence Sara, Rue du, n°20 Av. Prince Moulay Abdellah, Tangier 90000, Morocco</p>
           <p>الهاتف: <a href="tel:+212662100852">+212 662-100852</a></p>
           <p>البريد: <a href="mailto:contact@cabinetlaghdas.ma">contact@cabinetlaghdas.ma</a></p>
         </div>

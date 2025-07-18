@@ -36,7 +36,7 @@ export default function ContactPage() {
         </div>
         <div className={styles.contactInfo}>
           <h3>معلومات المكتب</h3>
-          <p><strong>العنوان:</strong> شارع محمد الخامس، الطابق 4، مكتب 12، سطات، المغرب</p>
+          <p><strong>العنوان:</strong> 4eme étage, Résidence Sara, Rue du, n°20 Av. Prince Moulay Abdellah, Tangier 90000, Morocco</p>
           <p><strong>الهاتف:</strong> <a href="tel:+212662100852">+212 662-100852</a></p>
           <p><strong>البريد الإلكتروني:</strong> <a href="mailto:contact@cabinetlaghdas.ma">contact@cabinetlaghdas.ma</a></p>
 
